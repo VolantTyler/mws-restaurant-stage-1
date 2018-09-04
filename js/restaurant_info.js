@@ -87,7 +87,6 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   name.innerHTML = restaurant.name;
   //mycode
   name.setAttribute('aria-label', restaurant.name);
-  name.tabIndex = 0;
 
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;
@@ -138,7 +137,6 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
   const title = document.createElement('h3');
   title.innerHTML = 'Reviews';
-  title.tabIndex = 0;
   container.appendChild(title);
 
   if (!reviews) {
